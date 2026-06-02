@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>User Details</h1>
+    <ul id="userDetails">
+
+    </ul>
+    <script>
+        fetch("http://api.ipstack.com/162.158.122.99?access_key=f2294fdc9b9c8a12197602104b0ae50f", {
+            method: 'get',
+            headers: {
+                
+            }
+        })
+        .then(async (response) => await response.json())
+        .then(async (response) => {
+            html = "";
+            console.log(response)
+            html += '<li>' + response.ip + '</li>'
+            html += '<li>' + response.city + '</li>'
+            html += '<li>' + response.country_name + '</li>'
+            html += '<li>' + response.continent_name + '</li>'
+            html += '<li>' + response.zip + '</li>'
+            html += '<li>' + response.currency.name + '</li>'
+            html += '<li>' + response.currency.symbol + '</li>'
+            html += '<li>' + response.time_zone.current_time + '</li>'
+            document.getElementById("userDetails").innerHTML = html;
+        })
+    </script>
+</body>
+</html>
