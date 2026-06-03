@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Subscription Page</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://kit.fontawesome.com/f8e4e80f66.js" crossorigin="anonymous"></script>
+
+
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row d-flex justify-content-center">
+            <nav class="col-6 d-flex justify-content-between navbar navbar-expand-lg navbar-light border-bottom">
+                <img src="https://fontawesome.com/icons/brands/solid/bootstrap" alt="">
+                <a class="navbar-brand" href="#"><i class="fa-brands fa-bootstrap"></i>Pricing example</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                
+                <div class="col-6 collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Link</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Dropdown
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="#">Action</a>
+                                <a class="dropdown-item" href="#">Another action</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="#">Something else here</a>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link disabled" href="#">Disabled</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </div>
+
+    <div class="container mt-5">
+        <div class="container">
+            <h2 class="text-center">Pricing</h4>
+            <p class="text-center mt-4">
+                Quickly build an effective pricing table for your potential customers with this Bootstrap example. It's built with default Bootstrap components and utilities with little customization.
+            </p>
+        </div>
+        <div class="row mt-6">
+            <div class="col-md-4">
+                <div class="subscription-card selected">
+                    <div class="card-head bg-light">
+                        <h3 class="card-title">Free</h3>
+                    </div>
+                    
+                    <h3 class="mt-4"><b>$0</b>/mo</h3>
+                    <p class="mt-4">10 users included</p>
+                    <p>2 GB of storage</p>
+                    <p>Email support</p>
+                    <p>Help center access</p>
+                    <button class="btn btn-primary subscribe mt-4">Subscribe</button>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="subscription-card">
+                    <div class="card-head bg-light">
+                        <h3 class="card-title">Pro</h3>
+                    </div>
+                    
+                    <h3 class="mt-4"><b>$15</b>/mo</h3>
+                    <p class="mt-4">20 users included</p>
+                    <p>10 GB of storage</p>
+                    <p>Priority Email support</p>
+                    <p>Help center access</p>
+                    <button class="btn btn-primary subscribe mt-4" data-plan="Standard" data-price="20">Subscribe</button>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="subscription-card">
+                    <div class="card-head bg-light">
+                        <h3 class="card-title">Enterprise</h3>
+                    </div>
+                    
+                    <h3 class="mt-4"><b>$29</b>/mo</h3>
+                    <p class="mt-4">30 users included</p>
+                    <p>15 GB of storage</p>
+                    <p>Phone and email support</p>
+                    <p>Help center access</p>
+                    <button class="btn btn-primary subscribe mt-4">Subscribe</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container mt-5">
+        <div class="row d-flex justify-content-center">
+            <div class="col-12 text-center">
+                <h1>Compare plans</h1>
+            </div>
+            <div class="col-3">
+
+            </div>
+            <div class="col-3 text-right">
+                <b>Free</b>
+            </div>
+            <div class="col-3 text-center">
+                <b>Pro</b>
+            </div>
+            <div class="col-3 text-left">
+                <b>Enterprise</b>
+            </div>
+            <div class="col-3 text-right border-top">
+                <b>Public</b>
+            </div>
+            <div class="col-3 text-right pr-4 border-top">
+                <i class="fa-solid fa-check"></i>
+            </div>
+            <div class="col-3 text-center border-top">
+                <i class="fa-solid fa-check"></i>
+            </div>
+            <div class="col-3 text-left pl-5 border-top">
+                <i class="fa-solid fa-check"></i>
+            </div>
+            <div class="col-3 text-right border-top">
+                <b>Private</b>
+            </div>
+            <div class="col-3 text-right pr-4 border-top">
+                
+            </div>
+            <div class="col-3 text-center border-top">
+                <i class="fa-solid fa-check"></i>
+            </div>
+            <div class="col-3 text-left pl-5 border-top">
+                <i class="fa-solid fa-check"></i>
+            </div>
+            <div class="col-3 text-right border-top">
+                <b>Permissions</b>
+            </div>
+            <div class="col-3 text-right pr-4 border-top">
+                <i class="fa-solid fa-check"></i>
+            </div>
+            <div class="col-3 text-center border-top">
+                <i class="fa-solid fa-check"></i>
+            </div>
+            <div class="col-3 text-left pl-5 border-top">
+                <i class="fa-solid fa-check"></i>
+            </div>
+            <div class="col-3 text-right border-top">
+                <b>Sharing</b>
+            </div>
+            <div class="col-3 text-right pr-4 border-top">
+                
+            </div>
+            <div class="col-3 text-center border-top">
+                <i class="fa-solid fa-check"></i>
+            </div>
+            <div class="col-3 text-left pl-5 border-top">
+                <i class="fa-solid fa-check"></i>
+            </div>
+            <div class="col-3 text-right border-top">
+                <b>Unlimited members</b>
+            </div>
+            <div class="col-3 text-right pr-4 border-top">
+                
+            </div>
+            <div class="col-3 text-center border-top">
+                <i class="fa-solid fa-check"></i>
+            </div>
+            <div class="col-3 text-left pl-5 border-top">
+                <i class="fa-solid fa-check"></i>
+            </div>
+            <div class="col-3 text-right border-top">
+                <b>Extra security</b>
+            </div>
+            <div class="col-3 text-right pr-4 border-top">
+                
+            </div>
+            <div class="col-3 text-center border-top">
+                
+            </div>
+            <div class="col-3 text-left pl-5 border-top">
+                <i class="fa-solid fa-check"></i>
+            </div>
+        </div>
+        <div class="col-12 border-bottom mt-5">
+
+        </div>
+        <div class="row mt-5 mb-5">
+
+            <div class="col-3">
+                <span><i class="fa-brands fa-bootstrap"></i></span>
+                <p>2017-2022</p>
+            </div>
+            <div class="col-3">
+                <h4>Features</h4>
+                <span>Cool stuff</span>
+                <br>
+                <span>Cool stuff</span>
+                <br>
+                <span>Cool stuff</span>
+                <br>
+                <span>Cool stuff</span>
+                <br>
+                <span>Cool stuff</span>
+            </div>
+            <div class="col-3">
+                <h4>Resources</h4>
+                <span>Cool stuff</span>
+                <br>
+                <span>Cool stuff</span>
+                <br>
+                <span>Cool stuff</span>
+                <br>
+                <span>Cool stuff</span>
+                <br>
+                <span>Cool stuff</span>
+            </div>
+            <div class="col-3">
+                <h4>About</h4>
+                <span>Cool stuff</span>
+                <br>
+                <span>Cool stuff</span>
+                <br>
+                <span>Cool stuff</span>
+                <br>
+                <span>Cool stuff</span>
+                <br>
+                <span>Cool stuff</span>
+            </div>
+        </div>
+    </div>
+
+ 
+</body>
+</html>
